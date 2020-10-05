@@ -6,5 +6,6 @@ The Script prints out all the details of the currently used IP Address.
 ## What is an IP Address?
 An Internet Protocol address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.
 
-
+## How The Script Work?
+This script takes IP address as argument and uses the IP location API to extract details realted to that IP Address
 

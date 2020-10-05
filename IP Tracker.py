@@ -22,6 +22,7 @@ def main():
 	parser = argparse.ArgumentParser()					#argument parser to accept arguments when running script from a shell
 	parser.add_argument("ipaddress", help = "IP Address To Track") # Made IP Address a compulsory argument
 	args = parser.parse_args()
+  functions-and-error-handling
 	data = get_ip(args.ipaddress)
 	if (data == "Fail") or ("Exception" in data):
 		print(data)

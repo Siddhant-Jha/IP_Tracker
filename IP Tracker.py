@@ -13,12 +13,12 @@ if __name__ == "__main__":
 	response = requests.get(url)						#getting Response of the Query
 	data = json.loads(response.content)					#Getting useful data from the response that we get
 	
-	print("\t[+] IP \t", data["query"])					#
-	print("\t[+] CITY \t", data["city"])					#
-	print("\t[+] ISP \t", data["isp"])					#
-	print("\t[+] LOC \t", data["country"])					#	
-	print("\t[+] REG \t", data["regionName"])				#     printing required data about given IP Address
-	print("\t[+] TIME \t", data["timezone"])				#
-	print("\t[+] ZIP \t", data["zip"])					#
-	print("\t[+] LAT \t", data["lat"])					#
-	print("\t[+] LON \t", data["lon"])					#
+	print("\t[+] IP \t", data["query"])					#	printing required IP Address
+	print("\t[+] CITY \t", data["city"])					#	printing city of the given IP Address
+	print("\t[+] ISP \t", data["isp"])					#	printing ISP of the given IP Address
+	print("\t[+] LOC \t", data["country"])					#	printing Country of the given IP Address
+	print("\t[+] REG \t", data["regionName"])				#	printing Region of the given IP Address
+	print("\t[+] TIME \t", data["timezone"])				#	printing Timezone of the given IP Address
+	print("\t[+] ZIP \t", data["zip"])					#	printing ZIP Code of the given IP Address
+	print("\t[+] LAT \t", data["lat"])					#	printing Latitude of the given IP Address
+	print("\t[+] LON \t", data["lon"])					#	printing Longitude of the given IP Address
